@@ -1,14 +1,17 @@
 .banner-title {
-  font-size: 50px;
+  font-size: 100px;
   font-weight: bold;
-  color: #283060;
+  color: #04198D;
+  padding-right:100px;
+  padding-left:50px;
 }
 
 .line {
-  border-bottom: 5px solid #FEF054;
+  border-bottom: 8px solid #FEF054;
   display: block;
   width: 300px;
   margin-top: -20px;
+  margin-bottom: 20px;
 }
 
 .main-section-container {
@@ -21,31 +24,45 @@
 }
 
 .title-container h1 {
-  color: #283060;
+  color: #04198D;
   font-weight: bold;
+  font-size: 75px;
+  padding-bottom:40px;
 }
 
 .title-container p {
   color: #888888;
-  font-weight: bold;
-  font-size: 20px;
-  margin-bottom: 40px;
+  font-weight:light;
+  font-size: 30px;
+  margin-bottom: 70px;
 }
 
 .explanation-container {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
+  padding-top:40px;
 }
 
 .explanation-container h3 {
-  color: #505FB3;
+  color: #04198D;
+  font-size:35px;
+  font-weight:bold;
+  padding-bottom:50px;
+  padding-top:50px;
+  text-align: center;
+  margin-bottom:40px;
+  margin-top:40px;
 }
 
 .explanation-container p {
   color: #888888;
+  font-size: 25px;
+  font-weight:light;
+  padding-bottom:40px;
 }
 
 .explanation-container li {
   color: #888888;
+  font-size: 25px;
 }
 
 .section-break-line {
@@ -53,19 +70,24 @@
   width: 70%;
   align: center;
   margin-left: 15%;
+  margin-top:100px;
+  margin-bottom:100px;
+
+
 }
 
 .next-steps-section {
-  margin-top: 45px;
+  margin-top: 60px;
   text-align: center;
   margin-bottom: 35px;
 }
 
 .next-steps-section h2 {
-  font-size: 35px;
+  font-size: 50px;
   font-weight: bold;
-  color: #283060;
-  margin-bottom: 30px;
+  color: #04198D;
+  margin-bottom: 40px;
+  margin-top:40px;
 }
 
 .cards-container {
@@ -74,7 +96,7 @@
 }
 
 .individual-card-container {
-  background-color: #283060;
+  background-color: #04198D;
   margin: 30px;
   padding: 20px;
   border-radius: 5px;
@@ -102,7 +124,7 @@
 .next-steps-button {
   background-color: #FEF054;
   border: none;
-  color: rgb(23, 16, 16);
+  color: #04198D;
   padding: 15px 15px;
   text-align: center;
   text-decoration: none;
@@ -122,7 +144,7 @@
 .related-problems-section h2 {
   font-size: 35px;
   font-weight: bold;
-  color: #283060;
+  color: #04198D;
   margin-bottom: 10px;
 }
 
@@ -136,10 +158,10 @@
 }
 
 .individual-section-container h3 {
-  color:#505FB3;
+  color:#04198D;
   margin: 30px;
   padding: 20px;
-  margin-bottom: 0px;
+  font-size:bold;
 }
 
 .blue-icon {
@@ -151,7 +173,7 @@
 .categories-button {
   background-color: #FEF054;
   border: none;
-  color: rgb(23, 16, 16);
+  color:#04198D;
   padding: 10px 30px;
   text-align: center;
   text-decoration: none;
