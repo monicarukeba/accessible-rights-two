@@ -1,3 +1,11 @@
+.subpages-banner{
+  height:550px;
+  background:#04198D;
+}
+.banner-title{
+  color:#ffff;
+  font-size: 450px;
+}
 
 .forums-container{
 
@@ -34,6 +42,7 @@
   display: flex;
   justify-content: space-evenly;
 
+
 }
 
 .forum-category-card {
@@ -42,7 +51,7 @@
  }
 
  .forum-category-card a {
-  color: #505FB3;
+  color: #04198D;
   text-decoration: none;
 }
 
@@ -52,8 +61,10 @@
 // }
 
 .forum-category-card h3 {
-  color:#505FB3;
-  font-size: 20px;
+  color:#04198D;
+  font-size: 25px;
+  font-weight:bold;
+  padding-bottom: 30px;
   // margin: 30px;
   // padding: 20px;
   // margin-bottom: 0px;
@@ -72,17 +83,20 @@
 
 .add-a-new-question-section-container p {
   color: #888888;
-  font-weight: bold;
-  font-size: 20px;
-  margin-bottom: 25px;
-  margin-top: 30px;
+  font-weight:light;
+  font-size: 30px;
+  margin-top:80px;
+  padding-top:85px;
+  padding-bottom: 30px;
 }
 
 .add-a-new-question-section-container h1 {
   margin-bottom: 25px;
-  margin-top: 30px;
-  color: #283060;
+  margin-top: 80px;
+  color: #04198D;
   font-weight: bold;
+  padding-bottom:30px;
+  font-size: 55px;
 }
 
 .forum-section-break-line {
@@ -90,41 +104,59 @@
   width: 80%;
   align: center;
   margin-left: 10%;
+  margin-top:60px;
+
 }
 
 .forum-form-container {
   // width: 900px;
   margin: 50px 10% 50px 10%;
+  border-radius: 5px;
+  color: #04198D;
+  font-size:20px;
+  font-weight:bold;
 }
 
 
 .forum-form-container h1 {
-  color: #283060;
+  color: #04198D;
   font-weight: bold;
+  font-size:50px;
+  padding-top: 40px;
+  padding-bottom:40px;
 }
 
 .forum-questions{
   padding-top: 30px;
   margin: 0 10%;
   margin-bottom: 60px;
+  border-radius: 20px;
 }
 
 .forum-questions h1 {
-  color: #283060;
+  color:#04198D;
   font-weight: bold;
+  font-size: 55px;
   margin-bottom: 20px;
+  padding-bottom: 10px;
+  padding-bottom:20px;
+}
+.question-card{
+  border-radius: 20px;
 }
 
 .forum-questions h5 a {
-  color: #505FB3;
+  color:#04198D;
   text-decoration: none;
   font-weight: bold;
+  font-size: 25px;
+  padding-top:10px;
 }
 
 .submit-question-button {
   background-color: #FEF054;
   border: none;
-  color: rgb(23, 16, 16);
+  color:#04198D;
   padding: 15px 15px;
   font-weight: bold;
   // text-align: center;

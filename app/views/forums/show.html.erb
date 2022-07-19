@@ -1,6 +1,6 @@
 
 <div class="subpages-banner">
-  <h1>FORUM</h1>
+  <h1 class= "banner-title">FORUM</h1>
 </div>
 
 <div class="add-a-new-question-section-container">
@@ -44,11 +44,11 @@
   <hr class="forum-section-break-line">
 
 <div class="forum-form-container">
-<h1>Ask a question</h1>
+  <h1>Ask a question</h1>
   <%= simple_form_for [ @forum, @question ] do |f| %>
     <%= f.input :title, placeholder: "Whats your question?" %>
     <%= f.input :content, placeholder: "Add detailed information about your question" %>
-    <p><%= f.submit "Add question", class: "submit-question-button" %></p>
+    <p><%= f.submit "Add Question", class: "submit-question-button" %></p>
   <% end %>
 </div>
 
@@ -57,7 +57,7 @@
   <div class="forum-questions ">
     <h1><%= @forum.name %></h1>
       <% @forum.questions.each do |question| %>
-        <div class="card border-secondary shadow p-3 mb-5 bg-body rounded">
+        <div class="question-card border-secondary shadow p-3 mb-5 bg-body rounded">
         <div id="question-<%= question.id %>">
           <div class="card-body text-secondary">
             <h5 class="card-title"><%=link_to question.title, question_path(question) %></h5>
