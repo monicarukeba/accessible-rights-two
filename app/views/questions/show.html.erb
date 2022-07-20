@@ -1,7 +1,7 @@
 <div class= "questions-answer-container">
     <div>
       <% question = @question %>
-        <div class="card border-primary shadow p-3 mb-5 bg-body rounded">
+        <div class="card border-primary shadow p-3 mb-5 bg-body">
           <div id="question -<%= question.id %>">
             <div class="question-card">
               <p class= "title-text"><%= question.title %></p>
@@ -14,7 +14,7 @@
   <h3>Reply to the question</h3>
 
   <%= simple_form_for([ @question, @answer ]) do |f| %>
-    <div class="card border-secondary shadow p-3 mb-5 bg-body rounded">
+    <div class="card border-secondary shadow p-3 mb-5 bg-body">
       <div class="card-body text-secondary">
         <%= f.input :content %>
         <%= f.button :submit, class:"btn btn-primary yellow-button" %>
@@ -23,20 +23,21 @@
   <% end %>
 
   <h3>Answers</h3>
-
-  <% @question.answers.each do |answer| %>
-    <% content_limit = 50 %>
-    <div class="p-3 border bg-white mb-3" data-controller="show-more">
-      <% if answer.user.photo.key %>
-        <%= link_to profile_path(answer.user) do %>
-          <p class="content-text"><%= cl_image_tag answer.user.photo.key, height: 51, width: 55%>
+  <div class= "card">
+    <% @question.answers.each do |answer| %>
+      <% content_limit = 50 %>
+      <div class="p-3 border bg-white mb-3" data-controller="show-more">
+        <% if answer.user.photo.key %>
+          <%= link_to profile_path(answer.user) do %>
+            <p class="content-text"><%= cl_image_tag answer.user.photo.key, height: 51, width: 55%>
+          <% end %>
         <% end %>
-      <% end %>
-        <%= link_to answer.user.name, profile_path(answer.user), class: "username-text" %>
-          answered <%= time_ago_in_words(answer.created_at) %> ago</p>
-      <p data-show-more-target="truncated"><%= answer.content.truncate(content_limit) %></p>
-      <p class= "d-none" data-show-more-target="full"><%= answer.content %></p>
-      <%= link_to "Read more", "#", "data-action": 'click->show-more#showContent' if answer.content.length > content_limit%>
-    </div>
-  <% end %>
+          <%= link_to answer.user.name, profile_path(answer.user), class: "username-text" %>
+            answered <%= time_ago_in_words(answer.created_at) %> ago</p>
+        <p data-show-more-target="truncated"><%= answer.content.truncate(content_limit) %></p>
+        <p class= "d-none" data-show-more-target="full"><%= answer.content %></p>
+        <%= link_to "Read more", "#", "data-action": 'click->show-more#showContent' if answer.content.length > content_limit%>
+      </div>
+    <% end %>
+  </div>
 </div>
