@@ -1,11 +1,17 @@
 .questions-answer-container{
   width: 900px;
-  margin: 5% 15% 15%;
-  margin-bottom: 30px;
+  margin: 5% 15% 5% 15%;
+  padding-top:60px;
+  padding-bottom:45px;
+  padding-left:60px;
+  margin-right:60px;
 
+  .card{
+    border-radius: 5px;
+  }
   h3{
     font-family: 'Inter';
-    color: #354186;
+    color: #04198D;
     font-weight: 700;
     padding-bottom: 15px;
     font-size: 35px;
@@ -14,24 +20,28 @@
   .title-text{
     font-family: 'Inter';
     font-weight: 600;
-    color: #505FB3;
-    font-size: 20px;
+    color: #04198D;
+    font-size: 35px;
     text-decoration: none;
+    padding-top: 15px;
+    padding-left:10px;
 
   }
   .content-text{
     color:#36454F;
     text-decoration: none;
+    padding-bottom:15px;
+    padding-left:20px;
+    font-size:15px;
+
   }
 
   .username-text{
-    color:#36454F;
+    color:#04198D;
     text-decoration: none;
     font-size: 18px;
   }
-  .question-card{
 
-  }
 
   .content-text a {
     text-decoration: none;
